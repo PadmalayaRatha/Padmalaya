@@ -1,0 +1,26 @@
+<script src = "react.development.js"></script>
+<script src = "babel.min.js"></script>
+<script src = "react-dom.development.js"></script>
+
+
+
+<div id = "root"></div>
+
+<script type = "text/babel">
+
+    const App = ()=>{
+
+        const fnGetUsers = () =>{
+            alert('ss')
+        }
+        return <div>
+            <button onClick = {fnGetUsers}>Get Users</button>
+            </div>
+    }
+
+    //get reference of the container
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    //render content inside the container
+    root.render(<App/>)
+</script>
